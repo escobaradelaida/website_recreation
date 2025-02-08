@@ -128,7 +128,7 @@ table th, table td {
     max-width: 100%;
 }
 
-.similar-products button {
+/*.similar-products button {
     /*background-color: #007bff;
     color: #fff;
     border: none;
@@ -140,4 +140,3 @@ table th, table td {
 
 .similar-products button:hover {
     /*background-color: #0056b3;*/
-}
