@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Project</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 <body>
     <header>
@@ -16,26 +17,29 @@
         </nav>
     </header>
     <main>
+        <div class="container">
         <h2>
             Customer Registration
         </h2>
-        <p>1. User Information</p>
+        <p><h3>1. User Information</h3></p>
+        <div class="user">
         <form action="">
             <label for="first">First Name:</label>
             <input type="text" id="first" name="first" required />
 
             <label for="last">Last Name:</label>
-            <input type="text" id="last" name="last" required />
+            <input type="text" id="last" name="last" required /><br>
 
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required />
         </form>
+        </div>
         <!--Location-->
         <form action="">
             <label for="password">Password:</label>
             <input type="text" id="password" name="password" required />
         </form>
-        <p>2. Location</p>
+        <p><h3>2. Location</h3></p>
         <form action="">
             <label for="Address">Address</label>
             <input type="text" id="address" name="address" required>
@@ -371,7 +375,25 @@
  <label for="ca">Canada</label><br>
  </form>
 
-        </form>
+ <p><h3>3. Personal Details</h3></p>
+ <form action="">
+    <label for="birth">Birthday</label><br>
+    <input type="date" name="birth" id="birth">
+
+    <label for="color">Favorite Color</label>
+    <input type="color" name="color" id="color"><br>
+
+    <label for="interest">Interest in Art</label><br>
+    <input type="range" name="interest" id="interest">
+ </form>
+ <p><h3>4. All Done</h3></p>
+ <input type="checkbox" name="done" id="done">
+ <label for="complete">I agree to the Terms of the Site</label>
+        </form><br>
+    <!--button to submit-->
+    <button class="cute-submit">Sign Me Up!</button>
+    </div>
+    </div>
     </main>
     <footer></footer>
 </body>
