@@ -3,81 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Project</title>
+    <title>Art Store</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 <body>
-    <header><H1>Art Store</H1></header>
-    <main>
-        <ribbon class="div"><a href="./registration.html">Home</a></ribbon>
-        <ribbon class="div">About Us</ribbon>
-        <ribbon class="div">Art Works</ribbon>
-        <ribbon class="div">Artists</ribbon>
-        <div class="main-art">
-            <h2>Self-portrait in a Straw Hat</h2>
-            <p>By Louise Elizabeth Lebrun</p>
-            <img src="../media/louise_elizabeth.jpg" length="178" width="250" alt="Self-portrait in a Straw Hat by Louise Elizabeth Lebrun">
+    <header>
+        <h1>Art Store</h1>
+        <nav>
+            <a href="../html/registration.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Art Works</a>
+            <a href="#">Artists</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="featured-product">
+            <img src="../media/louise_elizabeth.jpg" alt="Self-portrait in a Straw Hat" class="product-image">
+            <div class="product-info">
+                <h2>Self-portrait in a Straw Hat</h2>
+                <p>By <a href="#">Louise Élisabeth Vigée Le Brun</a></p>
+                <p>The painting appears, after cleaning, to be an autograph replica of a picture...</p>
+                <p class="price">$700</p>
+                <div class="buttons">
+                    <button>Add to Wish List</button>
+                    <button>Add to Shopping Cart</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <td>1782</td>
+                    </tr>
+                    <tr>
+                        <th>Medium</th>
+                        <td>Oil on canvas</td>
+                    </tr>
+                    <tr>
+                        <th>Dimensions</th>
+                        <td>96cm x 71cm</td>
+                    </tr>
+                    <tr>
+                        <th>Home</th>
+                        <td><a href="#">National Gallery, London</a></td>
+                    </tr>
+                    <tr>
+                        <th>Genres</th>
+                        <td>Realism, Rococo</td>
+                    </tr>
+                    <tr>
+                        <th>Subjects</th>
+                        <td>People, Arts</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="info">
-            <p>The painting appears, after cleaning, to be an autograph replica of a picture, the original of 
-                which was painted in Brussels in 1782 in free imitation of Ruben's 'Chapeau de Paille', which Lebrun 
-                has seen in Antwerp. It was exhibited in Paris in 1782 at the Salon de la Correspondance. Lebrun's 
-                original is recorded in a private collection in France.
-            </p>
-            <p>$700</p>
-        </div>
-        <shopping-button class="div">
-            <button>Add to Wish List</button>
-            <button>Add to Shopping Cart</button>
-        </shopping-button>
-        <product-details class="div">
-            <p>Product Details</p>
-            <table>
-                <tr>
-                    <td>Date:</td>
-                    <td>Medium:</td>
-                    <td>Dimensions:</td>
-                    <td>Home:</td>
-                    <td>Genre:</td>
-                    <td>Subjects</td>
-                </tr>
-                <tr>
-                    <td>1782</td>
-                    <td>Oil on Canvas</td>
-                    <td>98cm x 71cm</td>
-                    <td>National Gallery, London</td>
-                    <td>Realism, Rococo</td>
-                    <td>People, Arts</td>
-                </tr>
-            </table>
-        </product-details>
-        <similar-products class="div">
-            <div>
+        <div class="similar-products">
+            <h3>Similar Products</h3>
+            <div class="product">
                 <img src="../media/116010.jpg" alt="Artist Holding a Thistle">
+                <p>Artist Holding a Thistle</p>
                 <button>View</button>
                 <button>Wish</button>
                 <button>Cart</button>
             </div>
-            <div>
+            <div class="product">
                 <img src="../media/120010.jpg" alt="Portrait of Eleanor of Toledo">
+                <p>Portrait of Eleanor of Toledo</p>
                 <button>View</button>
                 <button>Wish</button>
                 <button>Cart</button>
             </div>
-            <div>
+            <div class="product">
                 <img src="../media/107010.jpg" alt="Madame de Pompadour">
+                <p>Madame de Pompadour</p>
                 <button>View</button>
                 <button>Wish</button>
                 <button>Cart</button>
             </div>
-            <div>
+            <div class="product">
                 <img src="../media/106020.jpg" alt="Girl with a Pearl Earring">
+                <p>Girl with a Pearl Earring</p>
                 <button>View</button>
                 <button>Wish</button>
                 <button>Cart</button>
             </div>
-        </similar-products>
-    </main>
-    <footer></footer>
+        </div>
+    </div>
 </body>
 </html>
