@@ -42,7 +42,7 @@
         <p><h3>2. Location</h3></p>
         <form action="">
             <label for="Address">Address</label>
-            <input type="text" id="address" name="address" required>
+            <input type="text" id="address" name="address" required><br>
 
             <label for="City">City</label>
             <input type="text" id="city" name="city" required>
@@ -366,7 +366,7 @@
 </select>
 <!-- total - 252 -->
  <form action="">
-    <p>Continent</p>
+    <p><h4>Continent</h4></p>
  <input type="radio" name="continent" id="na">
  <label for="na">North America</label><br>
  <input type="radio" name="continent" id="sa">
@@ -383,9 +383,17 @@
     <label for="color">Favorite Color</label>
     <input type="color" name="color" id="color"><br>
 
-    <label for="interest">Interest in Art</label><br>
-    <input type="range" name="interest" id="interest">
+    <label for="interest" id="interest" class="interest-label">Interest in Art</label><br>
+    <input type="range" name="interest" id="interest-slide" min="Minimal" max="Love It!" />
+    <div class="slider-labels">
+    <span>None</span>
+    <span>Low</span>
+    <span>Moderate</span>
+    <span>High</span>
+    <span>Very High</span>
+</div>
  </form>
+ <div class="finish">
  <p><h3>4. All Done</h3></p>
  <input type="checkbox" name="done" id="done">
  <label for="complete">I agree to the Terms of the Site</label>
@@ -396,5 +404,6 @@
     </div>
     </main>
     <footer></footer>
+    </div>
 </body>
 </html>
